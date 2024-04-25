@@ -1,0 +1,65 @@
+body{
+    margin:0px;
+    background-color: rgb(201, 245, 212);
+}
+#navdiv
+{
+    justify-content: space-around;
+    background-color: black;
+    border:2px;
+    border-style:hidden;
+    border-color: black;
+    
+    display:flex;
+}
+.contents{
+    margin:20px;
+    display:inline;
+    font-size:25px;
+    color:white;
+
+
+}
+
+#navcontent
+        {
+            display:block;
+        color:white;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
+            padding:30px;
+            
+
+        }
+
+        .contents:hover{
+            color:green;
+            cursor: pointer;
+        }
+        #navend
+        {
+            display:flex;
+            gap:15px;
+            font-size: 20px;
+            font-weight:900;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:white;
+            padding:25px;
+        }
+        svg{
+            margin-top:20px;
+        }
+        svg:hover
+        {
+            cursor:pointer;
+color:green;
+        }
+        #navend:hover{
+            color:green;
+            cursor: pointer;
+        }
+
+        #endbutton:active
+        {
+background-color: rgb(15, 68, 92);
+        }

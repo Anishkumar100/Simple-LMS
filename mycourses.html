@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My courses</title>
+    <style>
+ 
+ 
+
+        .content  {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+        }
+        
+        .content {
+          padding: 0 10px;
+        }
+        
+        .content {
+          color: #fff;
+          text-decoration: none;
+          transition: background-color 0.3s ease;
+        }
+        
+        .content:hover {
+        font-weight: bolder;
+            font-family:cursive;
+            color:gold;
+          background-color: #080707;
+        
+        }
+        
+        .rocket-button {
+          background-color: #f7de02;
+          color: #fff;
+          border: none;
+          font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         
+          border-radius: 5px;
+          cursor: pointer;
+          position: relative;
+          overflow: hidden;
+        }
+        
+        .rocket-button:before {
+          content: "Join Us For A Centum Life";
+          font-family:Cursive;
+          font-weight: bold;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #fff;
+          border-radius: 5px;
+          transform: translateY(-100%);
+          transition: transform 0.3s ease;
+        }
+        
+        .rocket-button:hover:before {
+          transform: translateY(0);
+        }
+        
+        .rocket-button:after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 30px;
+          height: 30px;
+          background-image: url("rocket.png");
+          background-size: cover;
+          transform: translate(-50%, -50%) rotate(-45deg);
+          opacity: 0;
+          transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        
+        .rocket-button:hover:after {
+          transform: translate(-50%, -50%) rotate(0);
+          opacity: 1;
+        }
+        .neon-button {
+          background-color:red;
+          border: none;
+          color: #fff;
+         
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+        
+        
+          cursor: pointer;
+          position: relative;
+          overflow: hidden;
+          transition: background-color 0.3s ease;
+        }
+        
+        .neon-button:before,
+        .neon-button:after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+          height: 100%;
+          background-color: transparent;
+          border-radius: 50%;
+          opacity: 0;
+          transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        
+        .neon-button:before {
+          border: 2px solid #fff;
+          border-top-color: transparent;
+          border-right-color: transparent;
+          animation: neon-animation 2s ease-in-out infinite;
+        }
+        
+        .neon-button:after {
+          border: 2px solid #fff;
+          border-top-color: transparent;
+          border-left-color: transparent;
+          animation: neon-animation-reverse 2s ease-in-out infinite;
+        }
+        
+        @keyframes neon-animation {
+          0% {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 0;
+          }
+          50% {
+            transform: translate(-50%, -50%) scale(1.5);
+            opacity: 1;
+          }
+          100% {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 0;
+          }
+        }
+        
+        @keyframes neon-animation-reverse {
+          0% {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 0;
+          }
+          50% {
+            transform: translate(-50%, -50%) scale(1.5);
+            opacity: 1;
+          }
+          100% {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 0;
+          }
+        }
+
+        .text:hover
+        {
+            color:gold
+        }
+            </style>
+</head>
+
+    <body style=" padding:0px; margin:0px;background-color: #181414;">
+        <div style=" display: flex;background-color:#080807;justify-content: space-between; align-items: center;
+        color:aliceblue; flex-wrap: wrap;">
+            <div id=" navstart" style=" flex-grow:1">
+                <img src="Navimg.png" width="200px">
+    
+            </div>
+    
+            <nav id=" navcenter" style=" flex-grow:1">
+                <ul style=" font-size: 30px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                  <a href="Home.html" target="_self">
+                    <li class="content" style=" display:inline-block;gap:20px; cursor: pointer;">Home</li></a>
+                    <a href=" Courses.html" target="_self">
+                    <li class="content" style=" display:inline-block;cursor: pointer;">Courses</li></a>
+                
+                    <a href="Contact.html" target="_self">
+                    <li class="content"style=" display:inline-block;cursor: pointer;">Contact</li>
+                    </a>
+                </ul>
+            </nav>
+    
+            <div id=" navend" style=" flex-grow:1">
+                <img src="menu (1).png" width="100px">
+    
+            </div>
+        </div>
+    
+        
+            
+       
+           
+    <div style=" display:flex; flex-direction: row; color:white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 20px;text-align: center;gap:30px; margin-left:80px; margin-top:50px">
+
+        <a href="https://youtu.be/yTzSIXUU_ds?si=5Qv9dpzUMBOJagFV" target="_self">
+        <div style=" display: flex;flex-direction: column;width:fit-content;background-color: rgb(29, 25, 25); flex-wrap: wrap;"> 
+<img src=Science.jpg style=" width:350px; height:250px;background-color: rgb(29, 25, 25); flex-wrap: wrap;">
+<p class=" text">Basic Science For Class 1</p></a>
+        </div>
+        <a href="https://youtu.be/Hwr4gEHepOo?si=KgpV5WqweIbl3emN" target="_self">
+        <div style=" display: flex;flex-direction: column;width:fit-content;background-color: rgb(29, 25, 25); flex-wrap: wrap;">
+            <img src="maths.jpg"style=" width:350px;height:250px">
+            <p class=" text">Basic Maths For Class 1</p></a>
+
+        </div>
+        <a href=" https://youtu.be/I_skq1F1ugI?si=TMZUU71JE9eIct9h" target="_self">
+        <div style=" display: flex;flex-direction: column;width:fit-content;background-color: rgb(29, 25, 25); flex-wrap: wrap;">
+<img src="English.jpg"style=" width:350px;height:250px">
+<p class=" text">Basic English For Class 1</p></a>
+        </div>
+    </div>
+</body>
+</html>
